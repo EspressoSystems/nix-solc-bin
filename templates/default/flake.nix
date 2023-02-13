@@ -2,7 +2,7 @@
   description = "Solc-bin flake template";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs";
-  inputs.solc.url = "github:EspressoSystems/nix-solc-bin";
+  inputs.solc-bin.url = "github:EspressoSystems/nix-solc-bin";
   # inputs.solc-bin.url = "path:../../.";
   inputs.flake-utils.url = "github:numtide/flake-utils";
 

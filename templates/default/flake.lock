@@ -32,11 +32,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1676285628,
-        "narHash": "sha256-Hg+yTLvMaKhxiBnwG6SdLE1wpIv3qJg9bkvRsSDMAoo=",
+        "lastModified": 1676286385,
+        "narHash": "sha256-SrQVBc1ymnRiwqKbQCLbs5E/LOjajESjKFFENBBCic8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c4a8d9735c490f5e06111fc7844982338615c86e",
+        "rev": "3ea51a72e4f381706175c9f8ac7d07d7d57b6a27",
         "type": "github"
       },
       "original": {
@@ -73,14 +73,17 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 0,
-        "narHash": "sha256-GeH1vMZpmVrebWwWQWfwiZ0cAnCUaxnITvaRwuXAFOg=",
-        "path": "../../.",
-        "type": "path"
+        "lastModified": 1676286156,
+        "narHash": "sha256-WT2F9lMjhyxrdtrjOHpVMP8cJ9smWSl/ayqUIFhuMrs=",
+        "owner": "EspressoSystems",
+        "repo": "nix-solc-bin",
+        "rev": "d814a376e098bd070c162261c6326e9d4863207f",
+        "type": "github"
       },
       "original": {
-        "path": "../../.",
-        "type": "path"
+        "owner": "EspressoSystems",
+        "repo": "nix-solc-bin",
+        "type": "github"
       }
     }
   },
