@@ -19,7 +19,7 @@
         })
     // {
       overlays.default = final: prev: {
-        solc-bin = self.packages.${prev.system};
+        solc-bin = self.packages.${prev.stdenv.hostPlatform.system};
       };
       templates = {
         default = {

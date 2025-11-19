@@ -945,6 +945,18 @@
       "urls": [
         "dweb:/ipfs/QmPsmKxpd5berCgcTBXXPBC4PLHrb56tr3f6ZMxPGEf6vn"
       ]
+    },
+    {
+      "path": "solc-linux-amd64-v0.8.31-pre.1+commit.b59566f6",
+      "version": "0.8.31",
+      "prerelease": "pre.1",
+      "build": "commit.b59566f6",
+      "longVersion": "0.8.31-pre.1+commit.b59566f6",
+      "keccak256": "0x9829d630def4c4f5b16bbaa305614dfc1cefff697677d8c68ec84162c73ea95c",
+      "sha256": "0xc7ce590c02928ef04ba936b4962eed2162d4eefac5d73288257e16d20512f89f",
+      "urls": [
+        "dweb:/ipfs/QmenGcYX7mEtJA5m6yuDmKsxv2xVe4MqGC5vV8swRZrBtn"
+      ]
     }
   ],
   "releases": {
