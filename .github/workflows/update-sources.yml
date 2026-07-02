@@ -1,0 +1,26 @@
+name: "Update sources"
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v3
+
+    - run: ./update-sources.sh
+
+    - name: Commit and push
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        if git diff --quiet; then
+          echo "No changes."
+          exit 0
+        fi
+        git add list-linux-amd64.json list-macosx-amd64.json
+        git commit -m "chore: update solc sources"
+        git push

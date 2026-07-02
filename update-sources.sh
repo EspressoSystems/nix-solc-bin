@@ -1,5 +1,4 @@
-#!/usr/bin/env nix-shell
-#! nix-shell -i bash -p nix
+#!/usr/bin/env bash
 set -euo pipefail
 
 URL_MACOS="https://binaries.soliditylang.org/macosx-amd64/list.json"
