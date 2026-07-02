@@ -3,10 +3,11 @@
 let
   platform_id = if stdenv.isLinux then "linux-amd64" else "macosx-amd64";
   build_list = lib.importJSON (./. + "/list-${platform_id}.json");
+  released_builds = lib.filter (x: !(x ? prerelease)) build_list.builds;
   latest_build = lib.findSingle (x: x.version == build_list.latestRelease)
     (throw "version not found")
     (throw "found multiple matching versions")
-    build_list.builds;
+    released_builds;
   mkSolc = build:
     let
       version = build.version;
@@ -39,7 +40,7 @@ let
         platforms = [ "x86_64-linux" "x86_64-darwin" "aarch64-darwin" ];
       };
     };
-  pkgs = map (build: { name = build.version; value = mkSolc build; }) build_list.builds;
+  pkgs = map (build: { name = build.version; value = mkSolc build; }) released_builds;
   latest = { name = "latest"; value = mkSolc latest_build; };
   default = { name = "default"; value = mkSolc latest_build; };
 in
